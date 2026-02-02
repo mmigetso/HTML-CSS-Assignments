@@ -11,249 +11,190 @@ a {
     color: #0078d4;
 }
 
-.buttonBanner {
-    color: #9ba3b4;
-    background-color: rgba(255,255,255,0.04);
-    padding: 10px;
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:20px;
+    
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.image{
+    padding: 19px 15px 15px 36px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+ul{
+    display:flex;
+    gap: 12px;
+}
+
+li{
+    list-style:none;
     font-size: 16px;
-    border-radius: 32px;
-    border: 1px solid rgba(255,255,255,0.07);
+    padding: 0 12px;
+    color: #333333;
+    font-weight: 500;
 }
 
-.bannerLink {
-    padding-right: 8px;
-}
-
-.container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
+.button{
+    display:flex;
     padding: 20px;
 }
 
-.heroContainer {
-    display: flex;
-    justify-content: space-between;
+button{
+    background: #0078d4;
+    padding: 8px 16px;
+    color: #ffffff;
+    border-radius: 6px;
+    border: none;
 }
 
-.heroContainer > div {
-    text-align:left;
-}
+/*============Designing the Hero Section===========*/
 
-.flex {
-    display: flex;
-}
 
-.navContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.verticalCenter {
+.hero-text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px 0;
 }
 
-.navLink {
-    padding-left: 20px;
-    color: gray;
+.hero-text h1{
+    font-size:74px;
+    color: #1e1e1e;
+    margin: 9.5px 0px 23.7px;
+    font-family:sans-serif;
 }
 
-.topImage {
-    padding-right: 12px;
+.download-content-wrapper{
+    z-index: 10;
+    padding: 16px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 90%;
+    position: relative;
+
 }
 
-.banner {
-    padding: 10px;
-    background-color: black;
-    color: gray;
-    font-size: 14px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.navLink:hover {
-    color: white;
-}
-
-.searchInput {
-    border-radius: 5px;
-    border: 1px solid rgb(255, 255, 255, 0.2);
-    padding: 8px;
-    font-size: 16px;
-    background-color: black;
-}
-
-.downloadButton {
-    background-color: #0078d4;
-    color: white;
-    border: none;
-    padding: 7px;
-    padding-left: 0px;
-    width: 120px;
-    padding-right: 0px;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-
-/* Header Styles */
-header {
-    background-color: black;
-    color: white;
-}
-
-section {
-    background-color: black;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav li {
-    margin: 0 10px;
-}
-
-nav a {
-    color: #0078d4;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #007acc;
-}
-
-/* Hero Section Styles */
-.hero {
-    background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
-    color: white;
-    padding: 50px 20px;
-}
-
-.hero h2 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #0078d4;
-    color: white;
+.hero-text button{
     padding: 15px 30px;
-    font-size: 1.2em;
+    background: #1e1e1e;
+    font-size:17.1px;
+    color: white;
+    border:none;
     border-radius: 5px;
     margin-top: 20px;
-    transition: background 0.3s;
+    transition:  background  0.3s;
 }
 
-.cta-button:hover {
-    background: #e5b800;
+.hero-text button:hover{
+    background:
 }
 
-/* Language Style  */
-.language {
-    color: white;
-}
-
-.language .container {
+.container{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 2rem;
+    grid-template-columns:  1fr 2fr;
+    align-items:center;
+
 }
 
-.language .container p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 160%;
-    color:#9ba3b4;
-}
-
-.language .languagePanel {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-inline: 2.5rem
-}
-
-.languagePanel img {
+.language_panel .items img{
     height: 40px;
     width: auto;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
+.intro{
+    display:flex;
+    flex-direction:column;
+    padding: 0px 0px 40px;
+    margin-left: 30px;
 }
 
-/* Responsiveness, we'll discuss this when we reach tailwind
-@media (width < 1200px) {
-    .heroContainer div:has(img) {
-        width: 66.66666667%;
-        padding-inline: 2.5rem;
-    } 
-    .heroContainer img {
+.intro h2{
+    margin: 0px 0px 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.intro p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #475569;
+}
+
+.language_panel{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.items{
+    display:flex;
+    align-items:center;
+    gap: 8px;
+}
+
+code{
+    padding:2px 4px;
+    font-size:16px;
+}
+
+/*responsiveness*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .container{
+        grid-template-columns: 1fr;
+        width:100%;
+    }
+     .intro{
         width: 100%;
-    }
-    .container {
-        max-width: 970px;
-    }
-    .navContainer {
-        max-width: 1060px;
-    }
-    .language .container {
+        margin:auto;
+        padding: 0 15px;
+     }
+
+    
+     .language_panel{
         grid-template-columns: 1fr 1fr;
+        justify-items:center;
+        padding: 0px 0px;
+
+     }
+
+    .items{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
     }
+
+     
 }
 
-@media (max-width: 768px) {
-    .hero {
-        padding-block: 40px;
-    }
-    
-    .hero p {
-        font-size: 1em;
-    }
-    
-    .verticalCenter > div:has(.navLink) {
-        display: none;
-    }
-    .navContainer {
-       max-width: 600px;
-    }
-    .heroContainer {
-        flex-direction: column;
-        align-items: center;
-        gap:40px
-
-    }
-    .heroContainer > div {
-        text-align: center
-    }
-    .heroContainer div:has(img) {
-        width: 100%;
-    }
-    .language .languagePanel {
-        grid-template-columns: max-content 1fr max-content 1fr;
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   
 }
- */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
